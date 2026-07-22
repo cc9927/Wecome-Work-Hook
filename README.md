@@ -56,7 +56,7 @@
 
 ### 1. 下载
 
-前往 [Releases](https://github.com/) 页面下载最新版 `default.zip`，解压备用。
+前往 [Releases](https://github.com/cc9927/Wecome-Work-Hook/releases) 页面下载最新版 `default.zip`，解压备用。
 
 ### 2. 环境准备
 
