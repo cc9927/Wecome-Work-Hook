@@ -80,7 +80,7 @@
   - **标准 RESTful HTTP API**，POST + JSON，任意语言可调用（Python / Node.js / Java / Go / PHP …）
   - 本地 Express 服务器，默认监听 `127.0.0.1:8888`
   - 按资源分模块路由：`/api/login`、`/api/message`、`/api/group`、`/api/friend`、`/api/tag`、`/api/cdn` …
-  - 提供 `POST /api/call` 通用调用接口，可直连底层 `type`（适合高级用法）
+  - 提供 `POST /api/call` 通用调用接口
   - 统一响应结构 `{ success, data }`，清晰错误码与 HTTP 状态码
   - 内置授权校验（按企微实例端口绑定，过期返回 403）
   - 无需登录企业微信开放平台，无需审核
@@ -143,18 +143,7 @@
   ```
 
   <details>
-  <summary>高级：通过通用接口直连底层 type</summary>
 
-  ```python
-  # POST /api/call 支持所有 type，适合不想记 RESTful 路径的场景
-  requests.post("http://127.0.0.1:8888/api/call", json={
-      "port": 6764,
-      "type": 3000,          # 3000 = 发送文本消息
-      "user_id": "788xxx",
-      "msg": "你好鸭"
-  })
-  ```
-  </details>
 
   > 📄 完整 API 文档（含全部接口、参数说明、返回值示例）通过 **Apifox** 提供。
   > 链接：https://vwnwi1rg5b.apifox.cn/ 。授权后即可获取访问密码。
