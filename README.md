@@ -142,9 +142,6 @@
   http.Post("http://127.0.0.1:8888/api/message/text", "application/json", strings.NewReader(body))
   ```
 
-  <details>
-
-
   > 📄 完整 API 文档（含全部接口、参数说明、返回值示例）通过 **Apifox** 提供。
   > 链接：https://vwnwi1rg5b.apifox.cn/ 。授权后即可获取访问密码。
 
